@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">F1_ANGLADE_GODARD</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">F1 - Jean ANGLADE / Théo GODARD</string>
+    <string name="list">Liste</string>
+    <string name="research">Recherche</string>
+    <string name="random">Aléatoire</string>
+    <string name="enter_number">Entrer un nombre</string>
+    <string name="to_search">Rechercher</string>
+    <string name="presentation_research">Présentation de la page</string>
+    <string name="presentation_random">Présentation de la page</string>
 </resources>
