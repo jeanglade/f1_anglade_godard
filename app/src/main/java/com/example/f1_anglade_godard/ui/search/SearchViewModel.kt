@@ -1,21 +1,22 @@
 package com.example.f1_anglade_godard.ui.search
 
-import android.widget.TextView
-import androidx.lifecycle.ViewModel
-import com.android.volley.Request
-import com.android.volley.toolbox.JsonObjectRequest
+import androidx.lifecycle.*
+import com.example.f1_anglade_godard.rest.NumberApi
 
 class SearchViewModel : ViewModel() {
-    public fun getResult(textView:TextView, nombre:String){
-        //val queue = Volley.newRequestQueue(this)
+    private val numberApi = NumberApi()
+    private val numberLiveData: LiveData<String>
+        get() {
 
-        val requestUrl = "http://numbersapi.com/$nombre?json"
-        val jsonObjectRequest = JsonObjectRequest(
-            Request.Method.GET, requestUrl, null,
-            { response ->
-                textView.text = "Response: %s".format(response.toString())
-            },
-            { textView.text = "That didn't work!" })
-        //queue.add(jsonObjectRequest)
+        }
+
+    private fun loadNumber(n:String) {
+        numberLiveData = numberApi.getNumber(n)
     }
+
+    //= liveData {
+        //val number: String = numberApi.getNumber("1")
+      //  emit(number)
+    //}
+
 }

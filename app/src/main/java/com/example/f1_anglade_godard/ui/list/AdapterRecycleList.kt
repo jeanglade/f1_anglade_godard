@@ -9,10 +9,6 @@ import com.example.f1_anglade_godard.R
 class AdapterRecycleList(private val dataSet: Array<String>) :
     RecyclerView.Adapter<AdapterRecycleList.ViewHolder>() {
 
-    /**
-     * Provide a reference to the type of views that you are using
-     * (custom ViewHolder).
-     */
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textCell: TextView
 

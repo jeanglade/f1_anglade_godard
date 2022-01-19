@@ -14,6 +14,13 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.f1_anglade_godard.databinding.ActivityMainBinding
+import org.jetbrains.anko.doAsync
+import java.net.HttpURLConnection
+import java.net.URL
+import org.json.JSONObject
+
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,15 +43,4 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
-    public fun getResult(textView: TextView, nombre:String){
-        val queue = Volley.newRequestQueue(this)
-        val url = "http://numbersapi.com/12"
-        val stringRequest = StringRequest(Request.Method.GET, url,
-            { response ->
-                // Display the first 500 characters of the response string.
-                textView.text = "Response is: ${response.substring(0, 500)}"
-            },
-            { textView.text = "That didn't work!" })
-        queue.add(stringRequest)
-    }
 }
