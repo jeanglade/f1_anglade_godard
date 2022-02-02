@@ -16,7 +16,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        //Number
         val textViewResult = view.findViewById<TextView>(R.id.text_result_recherche)
         val editTextRecherche = view.findViewById<TextView>(R.id.edit_text_recherche)
         val buttonRecherche = view.findViewById<Button>(R.id.button_recherche)
@@ -29,6 +29,21 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         }
 
         viewModel.userInputLiveData.observe(viewLifecycleOwner, Observer<String> { newStringResult ->
+            textViewResult.text = newStringResult
+        })
+
+        //Date
+        val editTextRechercheDate = view.findViewById<TextView>(R.id.edit_text_recherche_date)
+        val buttonRechercheDate = view.findViewById<Button>(R.id.button_recherche_date)
+
+        buttonRechercheDate.setOnClickListener {
+            if(editTextRechercheDate.text.toString().trim().equals(""))
+                textViewResult.text = getString(R.string.required_number)
+            else
+                viewModel.getDate(editTextRechercheDate.text.toString() + "/date")
+        }
+
+        viewModel.userInputLiveDataDate.observe(viewLifecycleOwner, Observer<String> { newStringResult ->
             textViewResult.text = newStringResult
         })
     }

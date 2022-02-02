@@ -47,6 +47,35 @@
         />
 
     <TextView
+        android:id="@+id/text_recherche_date"
+        android:text="@string/enter_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_recherche_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:inputType="date"
+        android:hint="@string/example_date"
+        android:textColor="@color/purple_500"
+        />
+    <Button
+        android:id="@+id/button_recherche_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_search"
+        />
+
+    <TextView
         android:id="@+id/text_result_recherche"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
