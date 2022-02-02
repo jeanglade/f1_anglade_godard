@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_list, R.id.navigation_search, R.id.navigation_random))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
     }
 
 }

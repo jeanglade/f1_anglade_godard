@@ -1,22 +1,17 @@
+
 package com.example.f1_anglade_godard.ui.search
 
 import androidx.lifecycle.*
 import com.example.f1_anglade_godard.rest.NumberApi
+import kotlinx.coroutines.launch
 
 class SearchViewModel : ViewModel() {
     private val numberApi = NumberApi()
-    private val numberLiveData: LiveData<String>
-        get() {
 
-        }
+    val userInputLiveData = MutableLiveData<String>()
 
-    private fun loadNumber(n:String) {
-        numberLiveData = numberApi.getNumber(n)
+    fun getNumber(n: String) = viewModelScope.launch {
+        val textNumber: String = numberApi.getNumber(n)
+        userInputLiveData.value = textNumber
     }
-
-    //= liveData {
-        //val number: String = numberApi.getNumber("1")
-      //  emit(number)
-    //}
-
 }
