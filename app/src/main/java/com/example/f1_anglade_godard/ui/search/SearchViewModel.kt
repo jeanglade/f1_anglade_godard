@@ -15,10 +15,4 @@ class SearchViewModel : ViewModel() {
         userInputLiveData.value = textNumber
     }
 
-    val userInputLiveDataDate = MutableLiveData<String>()
-
-    fun getDate(n: String) = viewModelScope.launch {
-        val textNumber: String = numberApi.getNumber(n)
-        userInputLiveDataDate.value = textNumber
-    }
 }

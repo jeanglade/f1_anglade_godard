@@ -3,14 +3,17 @@
 
     <item
         android:id="@+id/navigation_list"
+        android:icon="@drawable/ic_baseline_list_24"
         android:title="@string/list" />
 
     <item
         android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_baseline_search_24"
         android:title="@string/research" />
 
     <item
-        android:id="@+id/navigation_random"
-        android:title="@string/random" />
+        android:id="@+id/navigation_funfact"
+        android:icon="@drawable/ic_baseline_local_play_24"
+        android:title="@string/funfact" />
 
 </menu>

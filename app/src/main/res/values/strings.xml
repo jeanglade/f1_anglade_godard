@@ -2,14 +2,18 @@
     <string name="app_name">F1 - Jean ANGLADE / Théo GODARD</string>
     <string name="list">Liste</string>
     <string name="research">Recherche</string>
-    <string name="random">Aléatoire</string>
+    <string name="funfact">Fun Fact</string>
     <string name="enter_number">Entrer un nombre</string>
     <string name="to_search">Rechercher</string>
     <string name="presentation_research">Recherche votre nombre ou votre date favoris</string>
-    <string name="presentation_random">Recherche un nombre aléatoire</string>
+    <string name="presentation_funfact">fun fact du jour</string>
     <string name="required_number">Nombre obligatoire</string>
     <string name="error">Erreur 404</string>
     <string name="back">Retour</string>
     <string name="enter_date">Entrer une date</string>
-    <string name="example_date">Mois/Jour</string>
+    <string name="example_date">Mois/jour</string>
+    <string name="example_year">1999</string>
+    <string name="example_number">16</string>
+    <string name="wrong_date_format">Mauvais format de date (MM/DD)</string>
+    <string name="enter_year">Entrer une année</string>
 </resources>

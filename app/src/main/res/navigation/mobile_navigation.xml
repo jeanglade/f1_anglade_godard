@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    android:label="@string/random"
+    android:label="@string/funfact"
     app:startDestination="@+id/navigation_list">
 
     <fragment
@@ -19,8 +19,8 @@
         tools:layout="@layout/fragment_search" />
 
     <fragment
-        android:id="@+id/navigation_random"
-        android:name="com.example.f1_anglade_godard.ui.random.RandomFragment"
-        android:label="@string/random"
-        tools:layout="@layout/fragment_random" />
+        android:id="@+id/navigation_funfact"
+        android:name="com.example.f1_anglade_godard.ui.funfact.FunFactFragment"
+        android:label="@string/funfact"
+        tools:layout="@layout/fragment_funfact" />
 </navigation>
