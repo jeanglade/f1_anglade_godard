@@ -1,5 +1,6 @@
 # f1_anglade_godard
 Programmation Application Mobile  - 3ème année ISIMA https://etudiants.openium.fr/pam/TP2_Android_ISIMA_2022.pdf
+
 L'objectif de ce TP est de créer une application contenant, une liste, un écran de détail, d'utiliser des viewmodels et des coroutines. 
 L'API que l'on a utilisé pour ce TP est http://numbersapi.com/#42. Lorsqu'on lui donne un nombre ou une date dans le lien, elle nous retourne un funfact à propos de celui-ci.
 
