@@ -11,4 +11,4 @@ Notre application compte 3 écrans, un écran contenant une liste de nombres, un
 
 - Ecran de recherche: Sur cet écran on peut faire des recherches afin d'obtenir la funfact d'un nombre ou d'une date précise. 
 
-- Ecran funfact du jour: Cet écran affiche la funfact de la date du jour (Attention : ne pas épileptique). 
+- Ecran funfact du jour: Cet écran affiche la funfact de la date du jour (Attention : ne pas être épileptique). 
